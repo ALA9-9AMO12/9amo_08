@@ -2,6 +2,20 @@
     <title>Imker - @yield('title')</title>
     <script src="{{asset('js/bootstrap.js')}}" defer></script>
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
+<<<<<<< Updated upstream
+=======
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>tinymce.init({
+            selector: 'textarea#text_editor',
+            plugins: 'save image',
+            toolbar: 'undo redo | formatselect | ' +
+                'bold italic backcolor | alignleft aligncenter ' +
+                'alignright alignjustify | bullist numlist outdent indent | ' +
+                'removeformat | help | save | image',
+            height: 600,
+        });
+    </script>
+>>>>>>> Stashed changes
 </head>
 <div class="d-flex justify-content-around align-items-center p-3 bg-yellow fw-bold">
     <a href="/">
