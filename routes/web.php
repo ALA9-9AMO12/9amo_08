@@ -13,5 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', 'RouteController@homePage');
-Route::get('/posts', 'RouteController@posts');
+Route::get('/posts', 'PostController@index');
 Route::any('/{route}', 'RouteController@index')->where('route', '(.*)');;
+
+Route::resource('posts', 'PostController');

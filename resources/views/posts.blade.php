@@ -1,3 +1,5 @@
+@include(App\Post::class)
+
 @extends('layouts.basic')
 
 @section('title', 'Homepage')
@@ -7,8 +9,18 @@
     <p>This is appended to the master sidebar</p>
 @endsection
 
+
+
 @section('content')
-    <h1>Posts!</h1>
+    @if(count($posts))
+        @foreach($posts as $post)
+            <h1>Posts!</h1>
+        @endforeach
+    @else
+        No posts found
+    @endif
 @endsection
+
+
 
 @include('partials.footer')
