@@ -4,11 +4,17 @@
 <body>
 
 <main class="container">
+<<<<<<< Updated upstream
     <style>
         * {
             font-family: charter, Georgia, Cambria, "Times New Roman", Times, serif;
         }
     </style>
+=======
+
+    <h1>{{$page->title}}</h1>
+    <small>{{$page->subtitle}}</small>
+>>>>>>> Stashed changes
     <div class="row no-gutters flex-column-reverse flex-xl-row">
         <div class="col-12 col-xl-8 p-3">
             <div class="p-3">
@@ -40,6 +46,7 @@
 
             </div>
         </div>
+<<<<<<< Updated upstream
 
 
         <div class="col-12 col-xl-4 p-3">
@@ -52,6 +59,9 @@
             display: none !important
         }
     </style>
+=======
+    </div>
+>>>>>>> Stashed changes
 </main>
 
 </body>
