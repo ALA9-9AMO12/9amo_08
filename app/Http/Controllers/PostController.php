@@ -15,7 +15,7 @@ class PostController extends Controller
 //        }
 ////        $comments = $post->comments;
         $posts = Post::all();
-        return view('posts')->with(posts, $posts);
+        return view('posts.index')->with('posts', $posts);
     }
 
     public function deletePost($id) {

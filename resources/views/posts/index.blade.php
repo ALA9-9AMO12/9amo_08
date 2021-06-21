@@ -1,5 +1,3 @@
-@include(App\Post::class)
-
 @extends('layouts.basic')
 
 @section('title', 'Homepage')
@@ -12,9 +10,13 @@
 
 
 @section('content')
-    @if(count($posts))
+    <h1>Posts</h1>
+    @if(count($posts) >= 1)
         @foreach($posts as $post)
-            <h1>Posts!</h1>
+            <h3>{{$post->title}}</h3>
+            <small>{{$post->post_data}}</small>
+            <h5>{{$post->timestamps}}</h5>
+            <h6>{{$post->tags}}</h6>
         @endforeach
     @else
         No posts found
@@ -23,4 +25,4 @@
 
 
 
-@include('partials.footer')
+{{--@include('partials.footer')--}}
