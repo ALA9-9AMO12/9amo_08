@@ -7,6 +7,17 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
+    public function index() {
+//        $post = Post::where('slug',$slug)->first();
+//        if(!$post)
+//        {
+//            return redirect('/')->withErrors('requested page not found');
+//        }
+////        $comments = $post->comments;
+        $posts = Post::all();
+        return view('posts.index')->with('posts', $posts);
+    }
+
     public function deletePost($id) {
         return Post::destroy($id);
     }
