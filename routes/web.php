@@ -16,12 +16,8 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::any('/login', function () {
-    return view('auth.login');
-});
-Route::any('/register', function () {
-    return view('auth.register');
-});
+//Route::post('/register', 'RegisterController@create');
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/', 'RouteController@homePage');
