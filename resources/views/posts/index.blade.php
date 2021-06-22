@@ -13,7 +13,7 @@
     <h1>Posts</h1>
     @if(count($posts) >= 1)
         @foreach($posts as $post)
-            <h3>{{$post->title}}</h3>
+            <h3><a href="/posts/{{$post->id}}" {{$post->title}}</h3>
             <small>{{$post->post_data}}</small>
             <h5>{{$post->timestamps}}</h5>
             <h6>{{$post->tags}}</h6>
