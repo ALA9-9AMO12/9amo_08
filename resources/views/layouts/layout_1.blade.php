@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 <html>
 @include('partials.header')
 <body>
