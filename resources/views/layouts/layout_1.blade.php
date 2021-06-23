@@ -26,6 +26,11 @@
             @include('partials.sidebar')
         </div>
     </div>
+    <style>
+        .tox-notification {
+            display: none !important;
+        }
+    </style>
 </main>
 
 </body>
