@@ -22,6 +22,9 @@
                 </form>
             </div>
         </div>
+        <div class="col-12 col-xl-4 p-3">
+            @include('partials.sidebar')
+        </div>
     </div>
 </main>
 
