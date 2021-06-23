@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 <head>
     <title>Imker - @yield('title')</title>
     <script src="{{asset('js/bootstrap.js')}}" defer></script>
