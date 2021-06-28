@@ -15,7 +15,7 @@
         @foreach($posts as $post)
             <h3><a href="/posts/{{$post->id}}" {{$post->title}}</h3>
             <small>{{$post->post_data}}</small>
-            <h5>{{$post->timestamps}}</h5>
+            <h5>{{$post->created_at}}</h5>
             <h6>{{$post->tags}}</h6>
         @endforeach
     @else

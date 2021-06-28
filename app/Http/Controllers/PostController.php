@@ -14,7 +14,7 @@ class PostController extends Controller
 //            return redirect('/')->withErrors('requested page not found');
 //        }
 ////        $comments = $post->comments;
-        $posts = Post::orderBy('timestamp','desc')->get();
+        $posts = Post::orderBy('created_at','desc')->get();
         return view('posts.index')->with('posts', $posts);
     }
 

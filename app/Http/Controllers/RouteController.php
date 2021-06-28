@@ -12,7 +12,8 @@ class RouteController extends Controller
             $page = Page::select('*')
                 ->where('pages.url', '=', $route)
                 ->first();
-        return view("layouts.layout_{$page->template}", compact('page'));
+            $posts = Post::orderBy('created_at','desc')->get();
+        return view("layouts.layout_{$page->template}", compact('page','posts'));
     }
 
     public function homePage() {
